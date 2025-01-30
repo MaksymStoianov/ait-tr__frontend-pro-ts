@@ -13,7 +13,7 @@ export const List = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	max-height: 400px;
+	max-height: 700px;
 	overflow: auto;
 `;
 
