@@ -36,6 +36,10 @@ const globalStyles = css`
 		min-height: 100%;
 		font-family: Lato, sans-serif;
 	}
+
+	.material-symbols-outlined {
+		font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+	}
 `;
 
 function GlobalStyles() {

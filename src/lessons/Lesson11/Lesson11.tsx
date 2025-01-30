@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Button from "../../components/Button/Button";
+import ButtonIcon from "../../components/ButtonIcon/ButtonIcon";
 import { ErrorMessage } from "../../components/ErrorMessage/styles";
 import Spinner from "../../components/Spinner/Spinner";
 import Toolbar from "../../components/Toolbar/Toolbar";
@@ -81,10 +81,18 @@ function Lesson11() {
 	return (
 		<Lesson11Wrapper>
 			<Toolbar>
-				<Button name="Get more info" onClick={handleClickGetCatFact} />
+				<ButtonIcon
+					size="24"
+					icon="download"
+					title="Get more info"
+					onClick={handleClickGetCatFact}
+				/>
+
 				{catFacts.length > 0 && (
-					<Button
-						name="Delete all data"
+					<ButtonIcon
+						size="24"
+						icon="clear_all"
+						title="Delete all data"
 						style={{
 							marginLeft: "5px",
 							backgroundColor: "#F44336",
@@ -98,8 +106,10 @@ function Lesson11() {
 					{catFacts.map((catFact, i) => (
 						<ListItem key={catFact.id}>
 							<div>{catFact.text}</div>
-							<Button
-								name="Delete"
+							<ButtonIcon
+								size="24"
+								icon="delete"
+								title="Delete"
 								style={{
 									marginTop: "10px",
 									backgroundColor: "#F44336",
