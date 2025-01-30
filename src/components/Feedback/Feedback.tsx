@@ -11,7 +11,6 @@ import {
 function Feedback() {
 	const [likes, setLikes] = useState<number>(0);
 	const [dislike, setDislike] = useState<number>(0);
-	console.log("render");
 
 	const addLike = (): void => {
 		setLikes(prevValue => prevValue + 1);
