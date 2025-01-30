@@ -1,6 +1,7 @@
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import { InputsContainer, LoginFormContainer, Title } from "./styles";
+
 function LoginForm() {
 	return (
 		<LoginFormContainer>
@@ -13,4 +14,5 @@ function LoginForm() {
 		</LoginFormContainer>
 	);
 }
+
 export default LoginForm;
