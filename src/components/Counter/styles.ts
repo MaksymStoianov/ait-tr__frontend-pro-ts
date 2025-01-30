@@ -11,9 +11,11 @@ export const CounterWrapper = styled.div`
 	border: 2px solid rgb(31, 31, 141);
 	border-radius: 4px;
 `;
+
 export const ButtonWrapper = styled.div`
 	width: 100px;
 `;
+
 export const ResultContainer = styled.div`
 	font-size: 24px;
 	font-weight: bold;
