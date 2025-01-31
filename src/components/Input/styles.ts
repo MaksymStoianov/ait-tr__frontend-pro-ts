@@ -5,10 +5,9 @@ export const InputContainer = styled.div`
 	flex-direction: column;
 	gap: 4px;
 	width: 100%;
-	max-width: 450px;
 `;
 
-export const LabelElement = styled.label`
+export const Label = styled.label`
 	font-size: 16px;
 	color: #6f6f6f;
 `;

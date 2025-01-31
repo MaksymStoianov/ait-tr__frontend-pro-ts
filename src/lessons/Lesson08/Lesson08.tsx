@@ -1,31 +1,38 @@
-import * as React from "react";
-import { Button } from "./styles";
+//1 способ - использование обычного css
 import "./styles.css";
+//3 способ - использование библиотеки emotion (использование стилизованных компонентов)
+import Example1 from "../../assets/avatar.jpg";
+import Example2 from "../../assets/logo.jpg";
+import { BoxInfo, ContentContainer, Image, Text } from "./styles";
 
-type Lesson08Props = {
-	children?: React.ReactNode;
-};
-
-function Lesson08(props: Lesson08Props) {
-	const { children } = props;
-	const pStyles = {
-		color: "#222",
-		fontSize: "15px",
+function Lesson08() {
+	//Объект для inline стилей (2 способ)
+	const textStyles = {
+		color: "blue",
+		fontSize: "26px",
 	};
 
 	return (
 		<div className="lesson08-wrapper">
-			<div
-				style={{
-					color: "#2196F3",
-					fontSize: "18px",
-				}}
-			>
+			{/* 2 способ - inline styles (передача объекта стилей в атрибут style) */}
+			<div style={{ color: "blueviolet", fontSize: "24px" }}>
 				Inline style example 1
 			</div>
-			<p style={pStyles}>Inline style example 2</p>
-			{children}
-			<Button>Привет</Button>
+			<p style={textStyles}>Inline style example 2</p>
+			<div style={textStyles}>Inline style example 3</div>
+			{/* 3 способ - использование библиотеки emotion */}
+			<BoxInfo primary>
+				<ContentContainer>
+					<Image src={Example1} />
+					<Text>Emotion example 1</Text>
+				</ContentContainer>
+			</BoxInfo>
+			<BoxInfo>
+				<ContentContainer>
+					<Image src={Example2} />
+					<Text>Emotion example 2</Text>
+				</ContentContainer>
+			</BoxInfo>
 		</div>
 	);
 }

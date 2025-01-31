@@ -17,3 +17,6 @@ export const InputsContainer = styled.div`
 	padding: 20px;
 	background-color: #75e1ed;
 `;
+export const Result = styled.div`
+	font-size: 34px;
+`;
