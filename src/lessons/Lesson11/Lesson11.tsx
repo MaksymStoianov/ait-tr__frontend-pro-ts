@@ -1,9 +1,9 @@
 import axios from "axios";
+import ButtonIcon from "components/ButtonIcon/ButtonIcon";
+import { ErrorMessage } from "components/ErrorMessage/styles";
+import Spinner from "components/Spinner/Spinner";
+import Toolbar from "components/Toolbar/Toolbar";
 import { useEffect, useState } from "react";
-import ButtonIcon from "../../components/ButtonIcon/ButtonIcon";
-import { ErrorMessage } from "../../components/ErrorMessage/styles";
-import Spinner from "../../components/Spinner/Spinner";
-import Toolbar from "../../components/Toolbar/Toolbar";
 import "./styles";
 import { Lesson11Wrapper, List, ListItem } from "./styles";
 
