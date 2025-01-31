@@ -6,7 +6,7 @@ export const LoginFormContainer = styled.form`
 	gap: 30px;
 	padding: 60px;
 	width: 590px;
-	min-height: 450px;
+	min-height: 350px;
 	max-height: fit-content;
 	background-color: white;
 	border: 1px solid black;
