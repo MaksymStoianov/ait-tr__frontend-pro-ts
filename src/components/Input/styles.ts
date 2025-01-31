@@ -12,6 +12,11 @@ export const Label = styled.label`
 	color: #6f6f6f;
 `;
 
+export const ErrorMessage = styled.div`
+	font-size: 16px;
+	color: rgb(214, 63, 63);
+`;
+
 export const InputElement = styled.input`
 	width: 100%;
 	height: 50px;
