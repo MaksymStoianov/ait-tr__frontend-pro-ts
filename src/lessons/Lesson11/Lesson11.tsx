@@ -6,11 +6,7 @@ import Toolbar from "components/Toolbar/Toolbar";
 import { useEffect, useState } from "react";
 import "./styles";
 import { Lesson11Wrapper, List, ListItem } from "./styles";
-
-interface Fact {
-	text: string;
-	id: number;
-}
+import { Fact } from "./types";
 
 /**
  * Загружает и отображает случайные факты о котах.
@@ -87,7 +83,6 @@ function Lesson11() {
 					title="Get more info"
 					onClick={handleClickGetCatFact}
 				/>
-
 				{catFacts.length > 0 && (
 					<ButtonIcon
 						size="24"
